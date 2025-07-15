@@ -18,8 +18,8 @@ import { MainLayout, MainLayoutTwo } from "./layout";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<MainLayout />}>
+    <MainLayout>
+      <Routes>
         <Route index element={<HomePage />} />
         <Route path="/shipping" element={<ShippingPage />} />
         <Route path="/return" element={<ReturnPage />} />
@@ -32,12 +32,9 @@ function App() {
         <Route path="/products-details" element={<ProductDetailsPage />} />
         <Route path="/favourites" element={<FavouritesPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
-      </Route>
-      <Route path="/" element={<MainLayoutTwo />}>
         <Route path="*" element={<NotFoundPage />} />
-      </Route>
-
-    </Routes>
+      </Routes>
+    </MainLayout>
   );
 }
 
