@@ -1,41 +1,9 @@
-import { Route, Routes } from "react-router";
-import {
-  AboutUsPage,
-  AllProductsPage,
-  HomePage,
-  NotFoundPage,
-  ProductDetailsPage,
-  FavouritesPage,
-  ShippingPage,
-  ReturnPage,
-  GarantPage,
-  CatalogPage,
-  BasketPage,
-  BlogPage,
-  ContactsPage,
-} from "./pages";
-import { MainLayout, MainLayoutTwo } from "./layout";
+import React from 'react'
 
-function App() {
+const App = () => {
   return (
-    <MainLayout>
-      <Routes>
-        <Route index element={<HomePage />} />
-        <Route path="/shipping" element={<ShippingPage />} />
-        <Route path="/return" element={<ReturnPage />} />
-        <Route path="/garant" element={<GarantPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/catalog" element={<CatalogPage />} />
-        <Route path="/about" element={<AboutUsPage />} />
-        <Route path="/basket" element={<BasketPage />} />
-        <Route path="/products" element={<AllProductsPage />} />
-        <Route path="/products-details" element={<ProductDetailsPage />} />
-        <Route path="/favourites" element={<FavouritesPage />} />
-        <Route path="/contacts" element={<ContactsPage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
-    </MainLayout>
-  );
+    <div>App</div>
+  )
 }
 
-export default App;
+export default App
