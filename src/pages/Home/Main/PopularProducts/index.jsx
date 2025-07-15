@@ -97,7 +97,7 @@ const PopularProducts = () => {
 
         const newProduct = cards.map((item) => {
             if(item.id == productId){
-                return {...item, like: true};
+                return {...item, like: !item.like};
             } else {
                 return item;
             }
